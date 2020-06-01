@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Quicksand:wght@600&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: contact-box;
+   outline: none;
+   list-style: none;
+   text-decoration: none;
+   font-family: 'Quicksand', sans-serif;
+}
+
+p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #a9a9a9;
+}
+
+.main_container{
+    position: relative;
+}
+
+h1.title{
+    margin-bottom: 20px;
+    color: #0d8a56;
+    font-family: 'Allura', cursive;
+    text-transform: uppercase;
+    font-size: 38px;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+}
+
+.btn a{
+    display: block;
+    width: 180px;
+    height: 35px;
+    border: 2px solid #3822fb;
+    line-height: 35px;
+    margin: 25px auto 0;
+    color: #fb2274;
+    text-align: center;
+}
+
+
+
+/* Navigation bar */
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+.logo a{
+    font-family: 'Allura', cursive;
+    font-size: 32px;
+    color: #3822fb;
+}
+
+.navbar .navbar_items ul{
+    display: flex;
+}
+
+
+.navbar .navbar_items ul li{
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.navbar .navbar_items ul li a{
+    color: rgb(212, 13, 13);
+}
+
+/* Banner Image */
+.banner_image{
+    background-image: url("/images/p1.jpg");
+    background-color: aqua;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .banner_content{
+      text-align: center;
+      color: rgba(255, 255, 255, 0.514);
+ }
+
+  .banner_content h1{
+      text-transform: uppercase;
+      line-height: 38px;
+      margin-bottom: 15px;
+  }
+
+  .banner_content h1 span{
+      color: #fb2274;
+  }
+
+
+  /* About Me*/
+  .about,
+  .services,
+  .contact,
+  .mywork{
+      padding: 5% 10%;
+      text-align: center;
+  }
+
+  /* Services */
+  .services{
+      background: #f5f5f5;
+  }
+
+  .diff_services{
+      display: flex;
+      margin-top: 35px;
+      justify-content: space-between;
+  }
+
+  .diff_service_item{
+      width: 30%;
+  }
+  .diff_service_item h3{
+      color:#fb2274;
+  }
+  /* Contact*/
+  .form_input{
+      margin-bottom: 15px;
+  }
+  /* My Work */
+  .mywork{
+      background: #f5f5f5;
+  }
+
+  .mywork_wrapper .work_1{
+      display: flex;
+      justify-content: space-between;
+  }
+  .mywork_wrapper .work_1.work{
+      margin-bottom: 25px;
+  }
+
+  .mywork_wrapper .work_1{
+      width: 30%;
+      height: auto;
+      cursor: pointer;
+      overflow: hidden;
+  }
+  .mywork_wrapper .work_1 img{
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: all 0.5s ease;
+  }
+  .mywork_wrapper .work_1:hover img{
+      transform: scale(1.1);
+  }
+
+  /* footer */
+  .footer{
+      width: 100%;
+      text-align: center;
+      background: #444444;
+      padding: 20px 0;
+  }
+
+  .footer a{
+      color: #f5f5f5;
+  }
+
+  @media (max-width: 720px){
+      .navbar{
+          height: auto;
+          flex-direction: column;
+      }
+.navbar ul{
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo{
+    margin-bottom: 25px;
+}
+
+.navbar ul li{
+    margin-bottom: 5px;
+}
+
+.banner_content{
+    margin-top: 35px;
+}
+  }
